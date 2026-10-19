@@ -6,7 +6,6 @@ Projeto desenvolvido para validar o cadastro de clientes (nome, e-mail e idade) 
 
 ## 📁 Estrutura do Projeto
 
-```text
 cadastro-vitest/
 ├── src/
 │   └── cadastro.js          # Função de cadastro com as validações
@@ -15,26 +14,19 @@ cadastro-vitest/
 ├── package.json             # Dependências e scripts
 ├── package-lock.json
 └── README.md                # Respostas e documentação
-```
 
 ---
 
 ## 🚀 Como Executar
 
 1. **Instalar dependências:**
-   ```bash
    npm install
-   ```
 
 2. **Executar os testes:**
-   ```bash
    npm test
-   ```
 
 3. **Executar em modo observação (Watch):**
-   ```bash
    npm run test:watch
-   ```
 
 ---
 
@@ -116,15 +108,3 @@ Ao alterar temporariamente a idade mínima de 18 para 16 anos no código:
 | 6 | Idade exata de 18 anos | Positivo | `"Ana"`, `"ana@email.com"`, `18` | `"Usuário cadastrado com sucesso"` | ✅ Passou |
 | 7 | E-mail vazio | Negativo | `"João"`, `""`, `28` | `"Erro: email inválido"` | ✅ Passou |
 | 8 | E-mail sem domínio (Desafio) | Negativo | `"Lucas"`, `"usuario@"`, `21` | `"Erro: email inválido"` | ✅ Passou |
-
----
-
-## 📷 Resultado da Execução dos Testes
-
-```text
- ✓ tests/cadastro.test.js (8 tests) 2ms
-
- Test Files  1 passed (1)
-      Tests  8 passed (8)
-   Duration  250ms
-```
